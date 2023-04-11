@@ -2,13 +2,14 @@
 	#include <stdlib.h>
 	#include <ctype.h>
 	#include <string.h>
+	#include "main.h"
 	/**
 	 * check_num - check - string there are digit
 	 * @str: array str
 	 *
 	 * Return: Always 0 (Success)
 	 */
-	int check_num(char *str)
+	int check_num(char *str)/*check_num - check - string there are digit*/
 	{
 		/*Declaring variables*/
 		unsigned int count;
@@ -40,7 +41,7 @@
 	 */
 
 
-	int main(int argc, char *argv[])
+	int main(int argc, char *argv[])/*main - Print the name of the program*/
 
 
 	{
@@ -55,7 +56,7 @@
 		count = 1;
 		while (count < argc) /*Goes through the whole array*/
 		{
-			if (check_num(argv[count]))
+			if (check_num(argv[count]))/*counts the number on condition*/
 
 
 			{
@@ -63,9 +64,8 @@
 				sum += str_to_int;
 			}
 
-
 			/*Condition if one of the number contains symbols that are not digits*/
-			else
+				else
 			{
 				printf("Error\n");
 				return (1);
