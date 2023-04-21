@@ -43,5 +43,5 @@ cd alx-low_level_programming
 mkdir 0x0E-structures_typedef
 cd 0x0E-structures_typedef
 
-creat README.md file 
+creat README.md file
 
